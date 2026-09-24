@@ -1,0 +1,58 @@
+.g1-paginator
+	margin-top 20px
+	.wp-pagenavi
+		display flex
+		align-items center
+		justify-content center
+		.page, span
+			margin 0
+			margin-left 10px
+			transition all .4s
+			color c-4
+			width 50px
+			height 50px
+			letter-spacing 0.0015em
+			position relative
+			padding-left 3px
+			display flex
+			font-weight 600
+			font-size 20px
+			line-height 26px
+			align-items center
+			justify-content center
+			padding-right 3px
+			box-sizing border-box
+			&:hover, &.current
+				background-color c-4
+				color c-5
+			&:first-child
+				margin-left 0	
+				
+		.previouspostslink
+			margin 0
+			font-size 20px
+			text-align center
+			transition all .4s
+			position relative
+			&:after
+				display none
+		.nextpostslink
+			font-size 20px
+			margin 0
+			text-align center
+			margin-left 18px
+			transition all .4s
+			position relative
+			padding-right 3px
+			box-sizing border-box
+			&:after
+				display none	
+	
+	&.en-venta
+		padding-top 50px
+		.wp-pagenavi
+			.page, span, .previouspostslink, .nextpostslink
+				&:hover, &.current
+					color c-3
+					&:after
+						background-color c-3

@@ -1,0 +1,71 @@
+.b25-fila-top
+	background-color c-3
+	padding-top 16px
+	padding-bottom 16px
+	.wancho
+		max-width 1070px
+	.b3-wrap-clearfilters
+		padding-bottom 10px
+	.b3-select
+		background-color c-3
+		border-left 1px solid c-4
+		select
+			background-color c-3
+	@media screen and (max-width 745px)
+		.b3-select
+			margin-right 0
+			border-left none
+			margin-bottom 0px
+			border-bottom 1px solid c-4
+.b25-inner-select
+	display flex
+	@media screen and (max-width 745px)
+		flex-flow row wrap
+		background-color transparent
+.b25-fila-down
+	padding-top 84px
+	padding-bottom 40px
+	box-sizing border-box
+	.wancho
+		max-width 1050px
+	.b3-item
+		&:last-child
+			margin-bottom 0
+	.b3-listado
+		margin-top 0
+		&.no-title
+			.b25-title-down 
+				margin-bottom 0
+			.b3-item
+				&:nth-child(odd)
+					transform: translateY(0px)
+				
+	.b3-item
+		&:nth-child(odd)
+			transform: translateY(-130px)
+	@media screen and (max-width 745px)
+		padding-top 50px
+		.b3-item
+			&:nth-child(odd)
+				transform: translateY(0px)
+		
+.b25-title-down
+	font-weight 600
+	font-size 34px
+	line-height 44px
+	margin-bottom 75px
+	box-sizing border-box
+	width 45.4%
+	margin-left auto
+	@media screen and (max-width 1000px)
+		font-size 30px
+		line-height 40px
+	@media screen and (max-width 745px)
+		width 100%
+		font-size 25px
+		line-height 35px
+		margin-bottom 40px
+
+
+	
+	

@@ -1,0 +1,118 @@
+.b5
+	padding-top 38px
+	padding-bottom 90px
+	box-sizing border-box
+	@media screen and (max-width 745px)
+		padding-top 50px
+		padding-bottom 60px
+.b5-top
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+	margin-bottom 48px
+.b5-title
+	font-weight 600
+	font-size 34px
+	padding-right 30px
+	@media screen and (max-width 745px)	
+		width 100%
+		font-size 30px
+		padding-right 0
+		margin-bottom 30px
+.b5-link
+	color c-4
+	display flex
+	align-items center
+	i
+		font-size 10px
+		margin-right 10px
+		color c-4
+	span
+		margin 0
+		font-size 16px
+		font-weight 300
+		letter-spacing: 0.005em
+		text-decoration-line underline
+	&:hover
+		color #334049
+		transition all .3s
+.b5-down
+	display flex
+	flex-flow row wrap
+.b5-item
+	min-height 492px
+	width 33.33%
+	padding 27px 24px
+	box-sizing border-box
+	border-left 1px solid rgba(c-4, 0.4)
+	border-top 1px solid rgba(c-4, 0.4)
+	border-bottom 1px solid rgba(c-4, 0.4)
+	transition all .4s
+	&:first-child
+		padding-left 0
+		border-left none
+	@media screen and (min-width: 1025px)
+		&:hover, &.active
+			.b5-title-it
+				color c-14
+				&:after
+					color c-1
+			.b5-figura
+				.b5-bg
+					transform: scale(1.1)
+	@media screen and (max-width 1160px)
+		padding 25px 16px
+	@media screen and (max-width 1000px)
+		width 50%
+		&:last-child
+			border-left none
+			border-top none
+	@media screen and (max-width 745px)
+		width 100%
+		border-left none
+		padding-right 0px
+.b5-date
+	font-weight 500
+	font-size 14px
+	color c-2
+.b5-text-it
+	min-height 96px
+.b5-title-it
+	font-size 24px
+	padding-right 45px
+	line-height 32px
+	margin 0
+	color c-1
+	margin-top 8px
+	box-sizing border-box
+	position relative
+	transition all .3s
+	&:after
+		content "\e90b"
+		font-size 18px
+		font-family icomoon
+		right 0
+		top 0
+		bottom 0
+		position absolute
+		display flex
+		align-items center
+		color #AFAAA1
+	@media screen and (max-width 1160px)
+		font-size 20px
+		line-height 28px
+.b5-figura
+	margin-top 25px
+	overflow hidden
+.b5-bg
+	background-size cover
+	background-position center
+	height 288px
+	width 100%
+	transition: all 1s linear
+	
+	
+	
+	
+		
+	

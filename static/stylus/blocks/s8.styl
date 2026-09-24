@@ -1,0 +1,147 @@
+.b8
+	padding-top 63px
+	padding-bottom 80px
+	background-color c-5
+	.wancho
+		max-width 1100px
+	@media screen and (max-width 745px)
+		padding-top 40px
+		padding-bottom 50px
+.b8-wrap
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+.b8-left
+	width 40%
+	margin-top 20px
+	@media screen and (max-width 1180px)
+		width 43%
+	@media screen and (max-width 745px)
+		width 100%
+		margin-top 0
+.b8-right
+	width 46%
+	@media screen and (max-width 1180px)
+		width 49%
+	@media screen and (max-width 745px)
+		width 100%
+		margin-top 30px
+.b8-bg
+	background-size cover
+	background-position center
+	width 100%
+	height 100%
+	@media screen and (max-width 745px)
+		height 400px
+.b8-inner
+	max-width 792px
+.b8title
+	font-weight 700
+	font-size 48px
+	line-height 50px
+	color c-1
+	margin 0 0 40px 0
+	@media screen and (max-width 1024px)
+		font-size 35px
+		line-height 40px
+	@media screen and (max-width 767px)
+		max-width none
+		font-size 32px
+		margin-bottom 30px
+
+.b8accordion
+	max-width 792px
+	width 100%
+	margin 0 auto
+
+.b8item
+	border-bottom 2px solid c-2
+	&:first-child
+		border-top 2px solid c-2
+
+.b8head
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content space-between
+	align-items center
+	cursor pointer
+	position relative
+	padding 20px 40px 20px 7px
+	@media screen and (max-width 767px)
+		padding 20px 40px 20px 0
+
+	&:before
+		content "\e608"
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		width 32px
+		height 32px
+		color c-4
+		font-family icomoon
+		font-size 25px
+		transform translateY(-50%)
+		position absolute
+		top 50%
+		right 0
+	&:after
+		content "\e609"
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		width 32px
+		height 32px
+		color c-4
+		font-family icomoon
+		font-size 25px
+		transform translateY(-50%)
+		opacity 0
+		position absolute
+		top 50%
+		right 0
+
+.b8head.active
+	&:before
+		opacity 0
+
+	&:after
+		opacity 1
+
+	.b8number
+		color c-3
+
+	.b8subtitle
+		color c-1
+
+.b8subtitle
+	width calc(100% - 70px)
+	line-height 27px
+	color c-11
+	font-weight 600
+	font-size 20px
+	margin 0
+	span
+		font-weight 400
+		font-size 16px
+		color c-4
+	@media screen and (max-width 767px)
+		width calc(100% - 35px)
+		font-size 15px
+
+.b8container
+	line-height 156%
+	color c-0
+	font-family t-0
+	font-size 14px
+	letter-spacing: 0.0025em
+	text-align justify
+	padding 10px 50px 32px 0px
+	@media screen and (max-width 767px)
+		font-size 15px
+		padding 0 0 30px 0
+
+	p
+		margin 0

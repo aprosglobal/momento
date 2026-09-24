@@ -1,0 +1,325 @@
+// Bloque 28
+
+.arch-banner
+	background-size cover
+	background-position center
+	position relative
+	.wancho
+		height 339px
+		display flex
+		align-items center
+		z-index 3
+		position relative
+	&:after
+		content ""
+		left 0
+		top 0
+		width 100%
+		height 100%
+		position absolute
+		background: linear-gradient(360deg, rgba(16, 28, 20, 0.56) 0%, rgba(53, 63, 56, 0) 78.73%)
+		z-index 1
+.arch-banner-title
+	font-size 45px
+	color c-6
+	font-weight 700
+	max-width 460px
+	line-height 47.7px
+	span
+		margin 0
+		color c-6
+		display block
+	@media screen and (max-width 1200px)
+		font-size 40px
+		max-width 350px
+	@media screen and (max-width 745px)
+		font-size 35px
+		max-width 280px
+.single-post
+	.arch-banner-title
+		max-width 800px
+		font-size 48px
+		
+		@media screen and (max-width 1200px)
+			font-size 40px
+			max-width 430px
+		@media screen and (max-width 745px)
+			font-size 35px
+			max-width 280px		
+			
+		@media screen and (max-width 480px)			
+			font-size 22px
+
+// Bloque 29
+			
+.arch-list
+	padding-top 75px
+	padding-bottom 90px
+	background-color #F8F6F3
+	.wancho
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+	@media screen and (max-width 745px)
+		padding-bottom 60px
+		padding-top 60px
+.arch-list-left
+	width 66.1%
+	@media screen and (max-width 1000px)
+		width 100%
+	@media screen and (max-width 745px)
+		margin-bottom 40px
+.arch-list-list
+	display flex
+	flex-flow row wrap
+.arch-list-item-left
+	width 48.5%
+	margin-left 3%
+	margin-bottom 30px
+	box-shadow: 0px 9px 18px -5px rgba(0, 0, 0, 0.15)
+	transition all .3s
+	&:nth-child(2n+1)
+		margin-left 0
+	&:first-child
+		margin-left 0
+	&:hover
+		.arch-list-figura-bg
+			transform: scale(1.1)
+	@media screen and (max-width 745px)
+		width 100%
+		margin-left 0
+.arch-list-figura
+	display flex
+	overflow hidden
+	height 213px
+	img
+		max-width 100%
+		height auto
+.arch-list-figura-bg
+	height 100%
+	width 100%
+	transition: all 1s linear
+	background-size cover
+	background-position center
+.arch-list-texto-item
+	padding 25px
+	padding-bottom 50px
+.arch-list-title
+	font-size 14px
+	font-family t-0
+	color #0E0E0F
+	display block
+	margin-bottom 19px
+	letter-spacing 0.01em
+	text-transform uppercase
+.arch-list-sub-title
+	font-size 16px
+	font-family t-0
+	display block
+	margin-bottom 20px
+	line-height 19px
+	font-weight 700
+	min-height 42px
+.arch-list-description
+	font-size 14px
+	font-weight 400
+	font-family t-0
+	min-height 55px
+	line-height 20px
+	margin-bottom 20px
+	p
+		margin 0
+		
+.arch-list-right
+	width 29%
+	position relative
+	padding-left 105px
+	box-sizing border-box
+	@media screen and (max-width 1000px)
+		width 100%
+		max-width 400px
+.arch-list-categoria
+	font-size 24px
+	line-height 32px
+	margin-bottom 25px
+	color #484C56
+
+.arch-list-item-categoria
+	font-size 15px
+	display block
+	margin 0
+	text-transform uppercase
+	font-family t-0
+	letter-spacing 0.01em
+	color #6F7271
+	margin-bottom 16px
+	&.active
+		color #0E0E0F
+	&:hover
+		color #0E0E0F
+	&:last-child
+		margin-bottom 0
+		
+.arch-list-bg
+	background-size cover
+	background-position center
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	opacity 0
+	&:after
+		content ""
+		top 0
+		left 0
+		box-shadow: 0px 3px 10px -5px rgba(0, 50, 20, 0.47)
+		position absolute
+		height 100%
+		width 100%
+		border-radius 6px
+	&:before
+		content ""
+		top 0
+		left 0
+		background rgba(0, 0, 0, 0.57)
+		width 100%
+		height 100%
+		position absolute
+		z-index 1
+		border-radius 6px
+		
+.arch-list-text-banner
+	height 104px
+	border-radius 6px
+	box-sizing border-box
+	display flex
+	flex-direction column
+	justify-content center
+	padding-left 30px
+	padding-right 30px
+	padding-top 10px
+	padding-bottom 10px
+	z-index 3
+	position relative
+.arch-list-item-right-reciente
+	display block
+	// height 104px
+	border-radius 6px
+	margin-bottom 17px
+	transition all .3s
+	box-sizing border-box
+	position relative
+	border 1px solid #E0E0E0
+	&:hover
+		border none
+		box-shadow: 0px 3px 10px -5px rgba(0, 50, 20, 0.47)
+		.arch-list-text-banner
+			background-color transparent
+		.arch-list-description-banner
+			color c-6
+			span
+				color c-6
+		.arch-list-bg
+			opacity 1
+.arch-list-description-banner
+	font-size 16px
+	font-weight 700
+	line-height 17px
+	transition all .3s
+	&.black
+		span
+			color c-0
+	p
+		margin 0
+		margin-bottom 5px
+	span
+		font-size 12px
+		font-weight 500
+		color c-0
+		transition all .3s
+		letter-spacing 0.01em
+		text-transform capitalize
+		
+.arch-list-paginador
+	margin-top 32px
+	margin-bottom 20px
+	ul
+		display flex
+		justify-content center
+		flex-flow row wrap
+		align-items center
+	li
+		margin 0
+		padding-left 5px
+		box-sizing border-box
+		&:first-child
+			padding-left 0
+
+	a.page-numbers, span.page-numbers.current
+		margin 0
+		margin-left 10px
+		transition all .4s
+		color #0E0E0F
+		width 50px
+		height 50px
+		letter-spacing 0.0015em
+		position relative
+		padding-left 3px
+		display flex
+		font-weight 600
+		font-size 20px
+		line-height 26px
+		align-items center
+		justify-content center
+		padding-right 3px
+		box-sizing border-box
+		&:hover
+			background-color c-4
+			color c-5
+	
+	span.page-numbers.current
+		color c-5
+		background-color #718EA2
+		
+	.prev, .next
+		color c-3
+		width 55px !important
+		height 51px !important
+		display flex
+		color rgba(c-0, 0.3)
+		align-items center
+		justify-content center
+		background-color transparent
+		box-sizing border-box
+		font-size 14px !important
+		transition all .4s
+		i
+			&:before
+				color #0E0E0F
+		&:hover
+			i
+				&:before
+					color c-5
+	.prev
+		margin-right 20px
+	.next
+		margin-left 20px
+		
+
+	// .prev, .next
+	// 	color c-3
+	// 	width 55px !important
+	// 	height 51px !important
+	// 	display flex
+	// 	color rgba(c-0, 0.3)
+	// 	align-items center
+	// 	justify-content center
+	// 	background-color transparent
+	// 	border-radius 10px
+	// 	box-sizing border-box
+	// 	font-size 14px !important
+	// .prev
+	// 	margin-right 20px
+	// .next
+	// 	margin-left 20px	

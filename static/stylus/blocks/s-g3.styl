@@ -1,0 +1,155 @@
+// animaciones 
+@media screen and (min-width 1025px)
+	.g3-anima
+		&.anima
+			.g3-move-left-0,
+			.g3-move-left-1,
+			.g3-move-left-2,
+			.g3-move-left-3,
+			.g3-move-right-0,
+			.g3-move-right-1,
+			.g3-move-right-2,
+			.g3-move-right-3,
+			.g3-move-right-4
+				opacity 1
+				transform translateX(0px)			
+
+			.g3-move-up-0
+			.g3-move-up-1
+			.g3-move-up-2
+			.g3-move-up-3
+			.g3-move-up-4
+			.g3-move-up-5				
+			.g3-move-down-0	
+			.g3-move-down-1
+			.g3-move-down-2
+			.g3-move-down-3
+			.g3-move-down-4					
+				opacity 1
+				transform translateY(0px)
+
+			.g3-scale-0,
+			.g3-scale-1,
+			.g3-scale-4			
+				opacity 1
+				transform scale(1) 		
+				
+			.g3-rotate-0,
+			.g3-rotate-2,
+			.g3-rotate-3			
+				opacity 1
+				transform rotate(0deg)
+			
+	
+
+	.g3-move-left-0,
+	.g3-move-left-1,
+	.g3-move-left-2,
+	.g3-move-left-3
+		opacity 0
+		transform translateX(-100px)
+		transition all .5s
+		
+
+	.g3-move-left-1
+		transition-delay .25s
+		
+	.g3-move-left-2
+		transition-delay .5s		
+		
+	.g3-move-left-3
+		transition-delay .75s
+
+	.g3-move-right-0,
+	.g3-move-right-1,
+	.g3-move-right-2,
+	.g3-move-right-3,
+	.g3-move-right-4	
+		opacity 0
+		transform translateX(100px)
+		transition all .5s		
+
+	.g3-move-right-1
+		transition-delay .25s	
+		
+	.g3-move-right-2	
+		transition-delay .5s	
+		
+	.g3-move-right-3	
+		transition-delay .75s
+			
+	.g3-move-right-4	
+		transition-delay 1s	
+
+	.g3-scale-0,	
+	.g3-scale-1,
+	.g3-scale-4
+		opacity 0
+		transform scale(0.8) 
+		transition all .5s cubic-bezier(0.68, -0.6, 0.32, 1.6)	
+		
+	.g3-scale-1		
+		transition-delay .25s	
+		
+	.g3-scale-4
+		transition-delay 1s		
+		
+	.g3-rotate-0,
+	.g3-rotate-2,
+	.g3-rotate-3	
+		opacity 0
+		transform rotate(-15deg)
+		transition all .5s cubic-bezier(0.68, -0.6, 0.32, 1.6)	
+
+	.g3-rotate-2
+		transition-delay 0.5s
+		
+			
+	.g3-rotate-3
+		transition-delay 0.75s
+		
+	.g3-move-up-0,	
+	.g3-move-up-1,
+	.g3-move-up-2,
+	.g3-move-up-3,
+	.g3-move-up-4,
+	.g3-move-up-5
+		opacity 0
+		transform translateY(100px)
+		transition all .5s
+		
+	.g3-move-up-1
+		transition-delay .25s	
+		
+	.g3-move-up-2	
+		transition-delay .5s	
+		
+	.g3-move-up-3	
+		transition-delay .75s
+			
+	.g3-move-up-4	
+		transition-delay 1s				
+		
+	.g3-move-up-5	
+		transition-delay 1.25s	
+		
+	.g3-move-down-0,	
+	.g3-move-down-1,
+	.g3-move-down-2,
+	.g3-move-down-3,
+	.g3-move-down-4	
+		opacity 0
+		transform translateY(-100px)
+		transition all .5s
+		
+	.g3-move-down-1
+		transition-delay .25s	
+		
+	.g3-move-down-2	
+		transition-delay .5s	
+		
+	.g3-move-down-3	
+		transition-delay .75s
+			
+	.g3-move-down-4	
+		transition-delay 1s

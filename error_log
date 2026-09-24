@@ -1,0 +1,4 @@
+[14-Feb-2026 16:07:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/milenioa/domains/momento.com.pe/public_html/wp-content/themes/wp-moment-inmobiliaria/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/milenioa/domains/momento.com.pe/public_html/wp-content/themes/wp-moment-inmobiliaria/404.php on line 1

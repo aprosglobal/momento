@@ -1,0 +1,173 @@
+.small-editor
+	iframe
+		min-height 0 !important
+		height 150px !important
+.small-title
+	iframe
+		min-height 0 !important
+		height 100px !important
+		
+.wrap_ubigeo_distrito
+	display none
+	
+.acf-field.wrap_distrito
+	.acf-input
+		display none
+		
+.number-dptos-delivered, .year-delivery, .descriptions-dptos
+	display none
+	&.active
+		display block
+
+.btn-save-post
+	position fixed
+	bottom 10px
+	width 100px
+	border-radius 5px
+	padding 5px 0px
+	text-align center
+	right 10px
+	margin 0 auto
+	display block
+	z-index 1000
+	border-width 2px
+	border-style solid
+	transition all .3s
+	visibility hidden
+	opacity 0
+	
+	i, span
+		display inline-block
+		vertical-align middle
+	i
+		font-size 20px
+			
+	span
+		margin-left 10px
+	
+	&.active
+		opacity 1
+		visibility visible
+		
+		
+.user-tipo-editor
+
+	#menu-appearance
+		display none !important
+	&.nav-menus-php
+		#menu-settings-column
+			display none !important
+		
+		#nav-menus-frame
+			margin-left 0 !important
+		
+		.add-new-menu-action
+			display none !important
+			
+		.nav-tab-wrapper.wp-clearfix
+			display none !important
+		
+		#nav-menu-header
+			display none !important
+		.page-title-action.hide-if-no-customize
+			display none !important
+		
+		.menu-settings
+			display none !important
+		#nav-menu-bulk-actions-top, 
+		#nav-menu-bulk-actions-bottom
+			display none !important
+		
+		.delete-action
+			display none !important
+		.menu-item-actions
+			display none !important
+		.field-move
+			display none !important
+	&.post-type-page
+		.row-actions	
+			.trash
+				display none
+			.clone
+				display none
+			.rewrite
+				display none
+			.inline
+				display none
+			.edit_as_new_draft
+				display none
+
+	&.post-type-page 
+		.tablenav.top, .tablenav.bottom
+			display none				
+			
+
+	.page-title-action
+		&[href*="post_type=page"]
+			display none
+
+
+	#wp-admin-bar-new-page
+		display none		
+
+
+	#menu-tools	
+		display none
+
+		
+	#menu-posts-bloques
+		display none
+		
+
+	#wpbody-content .add-new-h2
+		&[href*="page=wpcf7-new"]
+			display none
+		
+
+	#welcome-panel
+		display none !important	
+			
+	#postbox-container-2
+		opacity 0
+		&.opacity
+			opacity 1
+		
+	#contact-form-editor-tabs 
+		.ui-state-default
+			display none
+		#mail-panel-tab
+			display inline-block
+		
+
+	#contact-form-editor 
+		.ui-tabs-panel
+			display none !important
+		
+		#mail-panel
+			display block !important
+
+
+	.contact-form-editor-box-mail		
+		legend
+			display none
+			
+		.form-table
+			tr 
+				display none
+				&:nth-child(1)
+					display table-row
+					
+			
+		&#wpcf7-mail-2
+			display none !important		
+
+	#toplevel_page_wpcf7		
+		.wp-submenu-wrap
+			display none
+
+
+	#the-list
+		#user-1
+			display none	
+		
+

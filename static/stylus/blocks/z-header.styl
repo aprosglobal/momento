@@ -1,0 +1,252 @@
+.cnt-wrapper
+	padding-top 96px
+.home
+	.footer
+		background-color c-4
+		.f-logo
+			display none
+		.f-logo-home
+			display block
+		.f-title, .f-phones, .f-correo, .f-red
+			color c-5
+		.f-red, .f-item-down
+			transition all .4s
+			&:hover
+				color #D3DCE2
+		.f-center
+			border-top 1px solid rgba(#D3DCE2, 0.4)
+			border-bottom 1px solid rgba(#D3DCE2, 0.4)
+		.f-description
+			color #D3DCE2
+		.f-item-down
+			color c-5
+			span
+				color c-5
+		.f-grupo-moment
+			color c-5
+		.f-staff
+			border-left 1px solid c-5
+			p
+				color c-5
+		.f-logo-staff
+			display none
+		.f-logo-staff-home
+			display block
+	.cnt-wrapper
+		padding-top 0
+	.header
+		&:not(.scrolling)
+			background-color transparent
+			border-bottom transparent
+			.h-logo
+				img
+					&.color
+						display none
+					&.white
+						display block
+			.h-menu
+				color c-5
+				@media screen and (min-width 1025px)
+					&:hover
+						transition all .3s
+						color rgba(c-5, 0.6)
+			.h-phone
+				color c-5
+				@media screen and (min-width 1025px)
+					&:hover
+						transition all .3s
+						color rgba(c-5, 0.6)
+.header
+	position relative
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 100
+	background-color c-5
+	.header-ctn
+		height 96px
+		display flex
+		align-items center
+		box-sizing border-box
+		padding-left 90px
+		padding-right 90px
+		border-bottom 1px solid #D2CCC2
+		justify-content space-between
+		@media screen and (max-width 1180px)
+			padding-left 60px
+			padding-right 60px
+		@media screen and (max-width 1000px)
+			padding-left 30px
+			padding-right 30px
+	.h-menu
+		margin-right 50px
+		color c-1
+		font-size 20px
+		@media screen and (min-width 1025px)
+			&:hover
+				transition all .3s
+				color #6B6B6C
+		@media screen and (max-width 1000px)
+			margin-right 25px
+			font-size 18px
+	.h-logo
+		margin 0
+		img
+			display block
+			max-width 100%
+			height auto
+			margin 0
+			&.white
+				display none
+		@media screen and (max-width 1000px)
+			width 210px
+	.h-left
+		display flex
+		align-items center	
+	.h-phone
+		color c-1
+		font-size 16px
+		font-weight 300	
+		letter-spacing: 0.005em
+		display block
+		i
+			margin-right 6px
+			font-size 20px
+		@media screen and (min-width 1025px)
+			&:hover
+				transition all .3s
+				color #6B6B6C
+	.h-right
+		@media screen and (max-width 745px)
+			display none
+			
+.h-wsp
+	width 66px
+	height 66px
+	border-radius 100%
+	background-color c-4
+	box-sizing border-box
+	display flex
+	align-items center
+	justify-content center
+	position fixed
+	right 10px
+	// top 50%
+	bottom 50px
+	z-index 100
+	i
+		color c-5
+		font-size 30px
+
+// Menu responsive
+.responsive-logo
+	margin-top 10px
+	width 80%
+	display block
+	img
+		display block
+		width 100%
+		height auto
+
+.menu-overlay
+	position fixed
+	top 0
+	left 0
+	background-color black
+	z-index -1
+	width 100%
+	height 100%
+	opacity 0
+	cursor pointer
+	transition all 0.45s ease
+	&.active
+		z-index 1000
+		opacity 0.8
+
+.menu-mobile-close, .menu-mobile-open
+	background-color c-1
+	border-radius 7%
+	color white
+	cursor pointer
+	font-size 28px
+	height 42px
+	line-height 42px
+	position fixed
+	right 5px
+	text-align center
+	top 5px
+	transition all 0.45s ease
+	width 42px
+	transform rotate(0deg)
+
+.menu-mobile-open
+	opacity 1
+	visibility hidden
+	z-index 1002
+	&.scrolling
+		opacity 0.6
+	&:hover
+		opacity 1
+	&.active
+		visibility hidden
+		opacity 0
+		right 220px
+		z-index 1000
+		transform rotate(-90deg)
+
+.menu-mobile-close
+	visibility hidden
+	opacity 0
+	z-index 1000
+	background white
+	color c-first
+	&.active
+		visibility visible
+		opacity 1
+		right 205px
+		z-index 1002
+		transform rotate(-90deg)
+.menu-sidebar
+	width 200px
+	height 100%
+	overflow auto
+	position fixed
+	top 0
+	right -200px
+	background white
+	z-index 1000
+	transition right 0.45s ease
+	&.active
+		right 0
+.menu-responsive
+	padding-top 10px
+	.menu-item
+		height 48px
+		line-height 48px
+		font-size 16px
+		a
+			display block
+			text-indent 20px
+			&:hover, &.active
+				background-color c-1
+				color white
+
+.cnt-wrapper,.footer
+	position relative
+	left 0
+	transition left 0.45s ease
+	&.active
+		left -200px
+.wrapper
+	overflow hidden
+
+body
+	&.active
+		overflow hidden
+
+@media screen and (max-width:1024px)
+	.menu
+		display none
+	.menu-mobile-open
+		visibility visible

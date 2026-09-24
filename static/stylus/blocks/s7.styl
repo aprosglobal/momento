@@ -1,0 +1,113 @@
+.b7-warp
+	display flex
+	flex-flow row wrap
+.b7-left
+	width 38%
+	background-size cover
+	background-position center
+	@media screen and (max-width 1000px)
+		width 100%
+		height 350px
+.b7-right
+	width 62%
+	border-top 1px solid c-9
+	border-bottom 1px solid c-9
+	box-sizing border-box
+	display flex
+	align-items center
+	@media screen and (max-width 1000px)
+		width 100%
+	@media screen and (max-width 745px)
+		flex-flow row wrap
+		padding-top 30px
+.b7-texto
+	width 59%
+	padding-left 100px
+	padding-right 100px
+	box-sizing border-box
+	@media screen and (max-width 1450px)
+		padding-left 60px
+		padding-right 60px
+	@media screen and (max-width 1200px)
+		padding-left 40px
+		padding-right 40px
+	@media screen and (max-width 745px)
+		width 100%
+		padding-left 20px
+		padding-right 20px
+.b7-title
+	font-weight 500
+	font-size 60px
+	line-height 68px
+	letter-spacing: -0.05em
+	margin-bottom 32px
+	@media screen and (max-width 1200px)
+		font-size 45px
+		line-height 50px
+	@media screen and (max-width 745px)
+		font-size 40px
+		line-height 45px
+.b7-dscription-center
+	font-size 16px
+	line-height 26px
+	letter-spacing: 0.005em
+	text-align justify
+.b7-listado
+	width 41%
+	border-left 1px solid c-9
+	box-sizing border-box
+	@media screen and (max-width 745px)
+		width 100%
+.b7-item
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	border-bottom 1px solid c-9
+	padding-top 35px
+	padding-bottom 35px
+	box-sizing border-box
+	&:last-child
+		border-bottom none
+	@media screen and (max-width 745px)
+		padding-left 20px
+		padding-right 20px
+		padding-bottom 25px
+		padding-top 25px
+.b7-number
+	font-weight 700
+	font-size 150px
+	text-align center
+	margin 0
+	line-height 100%
+	color c-4
+	@media screen and (max-width 1200px)
+		font-size 110px
+	@media screen and (max-width 745px)
+		font-size 90px
+.b7-yeard
+	display flex
+	align-items center
+	font-size 16px
+	font-weight 300
+	letter-spacing: 0.005em
+	color c-10
+	line-height 100%
+	margin-top 5px
+	&.no-link
+		a
+			text-decoration none
+		i
+			display none
+	a
+		margin 0
+		text-decoration underline
+	i
+		font-size 10px
+		margin-right 4px
+	
+	
+	
+	
+	
+	

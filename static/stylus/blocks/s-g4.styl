@@ -1,0 +1,68 @@
+.g4-loading
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 1100
+	display flex
+	align-items center
+	justify-content center
+	display none
+	&.active
+		display flex
+	img
+		position relative
+		z-index 2
+	&:after
+		z-index 1
+		content ""
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color #000
+		opacity 0.35
+		position absolute	
+
+//sweet alert
+.swal2-icon.swal2-error .swal2-x-mark
+	margin 0
+
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation	
+	background none !important
+	&:after
+		content ""
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color #000
+		opacity 0.35
+		position absolute
+		z-index 1
+.swal2-container 
+	.swal2-popup		
+		z-index 2
+		border-radius 15px
+	.swal2-close:hover
+		color c-1		
+
+.swal2-close	
+	// outline none  !important
+	// box-shadow none !important
+	// border none !important
+	&:focus
+		box-shadow none !important
+		border none !important
+		outline none  !important
+
+.pop-response		
+	.swal2-icon.swal2-error,
+	.swal2-icon.swal2-success
+		border none
+		
+	.swal2-title		
+		font-size 20px
+		

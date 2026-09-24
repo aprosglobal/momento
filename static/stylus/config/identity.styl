@@ -1,0 +1,90 @@
+// Colors idendity
+c-0 = #222223
+c-1 = #0E0E0F
+c-2 = #A3AEB3
+c-3 = #FCFBF9
+c-4 = #718EA2
+c-5 = #FFFFFF
+c-6 = #F8F6F3
+c-7 = #668092
+c-8 = #172125
+c-9 = #D3DCE2
+c-10 = #556B7A
+c-11 = #283239
+c-12 = #E9E3D7
+c-13 = #F1F4F6
+c-14 = #374F59
+c-15 = #445561
+c-16 = #5A7282
+c-17 = #4E4E4F
+c-18 = #AFAAA1
+
+// Fonts
+t-0 = 'Be Vietnam Pro', sans-serif
+
+
+icomoon = 'icomoon'
+
+// Mixins
+placeholder(color,famyli)
+	::-webkit-input-placeholder { color: color; font-family: famyli; } /* WebKit */
+	:-moz-placeholder { color: color; font-family: famyli; } /* Firefox 18- */
+	::-moz-placeholder { color: color; font-family: famyli; } /* Firefox 19+ */
+	:-ms-input-placeholder { color: color; font-family: famyli; } /* IE 10+ */
+
+transition-all()
+	transition all 0.25s
+
+cf()
+	zoom 1
+	&:after
+	&:before
+		content ""
+		display table
+	&:after
+		clear both
+.cf
+	cf()
+// Mixins
+using-flex(direction, justify-content, align-items)
+	display flex
+	flex-flow direction wrap
+	justify-content justify-content
+	align-items align-items
+	
+backgroundsize()
+	background-repeat no-repeat
+	background-size cover
+	background-position center center
+
+img-res()
+	max-width 100%
+	width 100%
+	height auto
+	display block
+
+background-t(color, alpha = 1)
+	ms-color = argb(color, alpha)
+	background rgba(color, alpha)
+	zoom 1
+	filter s('progid:DXImageTransform.Microsoft.gradient(startColorstr=%s,endColorstr=%s)', ms-color, ms-color) !important
+hex(decimal)
+	hex-value = ('0') ('1') ('2') ('3') ('4') ('5') ('6') ('7') ('8') ('9') ('A') ('B') ('C') ('D') ('E') ('F')
+	unquote(hex-value[floor(decimal / 16)] + hex-value[floor(decimal % 16)])
+
+argb(color, alpha = 1)
+	unquote('#') + hex(alpha * 255) + hex(red(color)) + hex(green(color)) + hex(blue(color))
+
+ckeditor()
+	p
+		font-family t-0
+		color c-0
+		font-size 16px
+		text-align: justify
+		margin 15px 0 0 0
+	p:first-child
+		margin-top 0
+	@media screen and (max-width 480px)
+		p
+			font-size: 14px
+

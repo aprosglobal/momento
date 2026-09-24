@@ -1,0 +1,415 @@
+// formulario
+colorLabel = c-16
+colorInput = c-14
+sizeLabel = 16px
+sizeInput = 16px
+sizeLabelUp = 12px
+altoLabel = 56px
+
+mbottom()
+	margin-bottom 15px
+	@media screen and (max-width 480px)
+		margin-bottom 10px
+
+
+
+//formulario	
+
+// .g5-wrap-form
+// 	background-color gray
+.g5-input-three
+	display flex
+	justify-content space-between
+	flex-flow row wrap
+	.g5-input, .g5-select ,.g5-textarea
+		width 32.5%
+.g5-input-two
+	display flex
+	justify-content space-between
+	flex-flow row wrap
+	.g5-input, .g5-select ,.g5-textarea
+		width 48.5%
+.g5-wrap-form
+	max-width 613px
+	margin 0 auto
+.g5-input, .g5-select ,.g5-textarea
+	mbottom()
+	position relative
+	background-color transparent
+	z-index 1
+	box-sizing border-box
+	border 1px solid c-4
+	background-color c-5
+	placeholder(c-2,t-0)
+	// border-radius 5px
+	
+	&.inFocus
+		border-color c-15
+		span
+			color c-1
+	input, select, textarea
+		
+		border 0
+		width 100%
+		height 34px
+		box-sizing border-box
+		display block
+		line-height 100%
+		background none
+		box-shadow none
+		appearance none
+		padding 0 14px
+		line-height 40px
+		position absolute
+		color colorInput
+		left 0
+		bottom 0
+		font-size sizeInput
+		overflow hidden
+		
+
+		// background-color rgba(20, 20, 20, 0.5)
+		
+		&:-webkit-autofill
+			-webkit-box-shadow 0 0 0px 200px #fff inset
+			-webkit-text-fill-color c-14
+			border-radius 5px
+			-webkit-background-color transparent !important
+		&:focus
+			
+			~ label 
+				span
+					transform: translate3d(0, -10px, 0)
+					font-size sizeLabelUp
+					opacity 1
+					color c-1
+					font-weight 500
+				i, .g5-icoinpu
+					font-size 20px
+					transform translate3d(0, -13px, 0)
+				.g5-icoinput
+					font-size 15px
+		// &:invalid
+		// 	color red
+	select
+		color colorInput
+		cursor pointer
+		option
+			color c-1
+		&::-ms-expand
+			display none
+		// option
+		// 	background-color c-4
+		// 	border-color c-4
+				
+	label
+		display block
+		height  altoLabel
+		pointer-events none
+		box-sizing border-box
+		position relative
+		border-radius: 10px
+		
+
+			
+		&.fijar
+			span
+				transform translate3d(0, -13px, 0)
+				font-size sizeLabelUp
+				opacity 1
+				color #929094
+			i, .g5-icoinput
+				font-size 22px
+				top 22px
+				transform translate3d(0, -13px, 0)
+			.g5-icoinput
+				font-size 22px
+		i, .g5-icoinput
+			font-size 22px
+			color colorLabel
+			position absolute
+			right 8px
+			bottom 14px
+			display inline-block
+			align-items center
+			justify-content center
+			color c-4
+			transition transform 0.2s, opacity 0.2s, font-size 0.2s
+		.g5-icoinput		
+			font-size 20px
+			right 12px
+			color c-2
+	.no-effect 
+		span, i, .g5-icoinput
+			transform inherit !important
+		span
+			font-size 16px !important	
+			
+	span
+		transform-origin 0% 50%
+		padding 0 14px
+		box-sizing border-box
+		transition transform 0.2s, opacity 0.2s, font-size 0.2s
+		display flex
+		height 100%
+		font-weight 300
+		align-items center
+		justify-content flex-start
+		color colorLabel
+		font-size sizeLabel
+		// color red
+		
+// .g5-select
+// 	label
+
+.g5-input
+	&.two-inner
+		border-bottom none
+		.g5-input, .g5-select, .g5-textarea
+			@media screen and (min-width 641px)
+				margin-bottom 0
+		
+.g5-input-file
+	// border-bottom 1px solid c-5
+	border-bottom 1px solid c-4
+	label
+		position relative
+		z-index 2	
+		display flex
+		align-items center
+		padding 0 14px
+		box-sizing border-box
+	input	
+		opacity 0
+		height 55px
+	&.g5-book-file
+		border 1px dashed c-4
+		background-color c-13
+		
+.g5-inpufile-text		
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 1
+	box-sizing border-box
+	padding-left 10px
+	pointer-events none
+	display flex
+	align-items center
+	color c-7
+.g5-text-input
+	font-size 16px
+	color c-16
+	font-weight 300
+.g5-textarea
+	width 100%
+	textarea
+		line-height 100%
+		height 88px
+		position static
+		padding-top 23px
+		box-sizing border-box
+	label
+		height 15px
+		position absolute
+		top 15px
+		left 0
+		width 100%
+		span
+			height 100%
+
+
+.g5-terminos
+	position relative
+	margin-bottom 21px
+	// padding-left 30px
+	// display flex
+	// justify-content center
+	// flex-direction column
+	// margin-bottom 7%
+	input[type="checkbox"]
+		opacity 0
+		visibility hidden
+		position absolute
+		top 0
+		left 0
+		&:checked + label
+			.g5-terminos_icon
+				&:before
+					border-color #696661
+				&:after
+					color #696661
+					opacity 1
+					visibility visible
+	&.b27-terminos
+		.g5-terminos_nota
+			padding-top 3px
+		.g5-terminos_icon
+			&:before
+				content ""
+				width 100%
+				height 100%
+				border 3px solid #696661
+				box-sizing border-box
+				position absolute
+				border-radius 3px
+				top 0
+				left 0
+
+.g5-terminos_nota
+	position relative
+	display block
+	padding-left 30px
+	padding-top 5px
+	box-sizing border-box	
+.g5-title-block
+	font-size 18px
+	font-family t-2
+	margin-bottom 25px
+	color c-8
+.g5-terminos_text
+	font-size 13px
+	line-height 15px
+	color rgba(c-17, 0.8)
+	letter-spacing 0.015em
+	p
+		margin 0
+	a
+		color c-4
+		text-decoration underline
+		&:hover
+			opacity 0.8
+			text-decoration underline
+			
+.g5-terminos_icon
+	position absolute
+	top 0
+	left 0
+	display block
+	width 18px
+	height 18px
+	border 1px solid transparent
+	margin 0px 0 0 0
+	&:before
+		content ""
+		width 100%
+		height 100%
+		border 1px solid #696661
+		box-sizing border-box
+		position absolute
+		// border-radius 3px
+		top 0
+		left 0
+	&:after
+		content "\e90d"
+		display block
+		width 100%
+		height 100%
+		line-height 22px
+		color #696661
+		font-family icomoon
+		font-weight bold
+		font-size 7px
+		text-align center
+		opacity 0
+		visibility hidden
+		transition all .25s ease-in-out
+		position absolute
+		top 0px
+		left 0px
+
+		
+.g5-required
+	display block
+	line-height 20px
+	letter-spacing: 0.25px
+	color c-0
+	font-size 14px		
+
+// .g5-form 
+// 	&.white
+// 		.g5-input, .g5-select ,.g5-textarea
+// 			border-bottom 1px solid #fff
+// 			input, select, textarea
+// 				color #fff
+		
+// 			select
+// 				color #fff
+// 				&:focus				
+// 					color c-0
+			
+// 			span
+// 				color #fff
+// 		.g5-input-check label				
+// 			color #fff
+
+// 		.g5-input-check			
+// 			text-align left
+// 			input:checked ~ label:before			
+// 				background-color c-5
+// 		i
+// 			color #fff
+.g-input-radio
+	width 25%
+	input
+		display none
+		&:checked
+			+ label
+				&:after
+					opacity 1
+				&:before
+					border 2px solid c-18
+	label
+		display flex
+		font-size 16px
+		color #6B6B6C
+		letter-spacing 0.005em
+		align-items center
+		position relative
+		&:before
+			content ""
+			width 20px
+			height 20px
+			border-radius 100%
+			border 2px solid c-0
+			display inline-block
+			margin-right 20px
+			box-sizing border-box
+		&:after
+			content ""
+			width 12px
+			height 12px
+			border-radius 100%
+			background-color c-18
+			position absolute
+			top 4px
+			left 4px
+			opacity 0
+			box-sizing border-box
+	@media screen and (max-width 480px)
+		width 50%
+			
+
+@media screen and (max-width 960px)
+	.g5-input.two-inner
+		width 100%			
+@media screen and (max-width 745px)
+	.g5-input-three
+		.g5-input, .g5-select ,.g5-textarea
+			width 100%	
+@media screen and (max-width 640px)	
+	.g5-politicas	
+		margin-top 30px
+	.g5-input-two:not(.b23-tipodoc)
+		flex-direction column
+		.g5-input, .g5-select
+			width 100%
+			
+	.g5-input-two.two-in-two, .g5-input.two-inner
+		margin-bottom 0
+// formulario
+@media screen and (max-width 480px)	
+	.g5-select label i
+		right 6px

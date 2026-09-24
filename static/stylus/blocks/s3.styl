@@ -1,0 +1,270 @@
+.b3
+	padding-top 76px
+	padding-bottom 50px
+	box-sizing border-box
+	background-color c-6
+	.wancho
+		max-width 1050px
+		#b3-list-project-filter
+			margin 0
+	@media screen and (max-width 745px)
+		padding-top 40px
+		padding-bottom 30px
+			
+
+.b3-title
+	font-size 48px
+	line-height 58px
+	color c-1
+	margin-bottom 51px
+	max-width 580px
+	strong
+		font-weight 700
+	@media screen and (max-width 1000px)
+		font-size 30px
+		line-height 38px
+		max-width 450px
+		margin-bottom 30px
+// .b3-wrap-select
+// 	background-color c-5
+.b3-inner-select
+	display flex
+	align-items center
+	background-color c-5
+	@media screen and (max-width 745px)
+		flex-flow row wrap
+		background-color transparent
+.b3-select
+	margin-right 19px
+	width 100%
+	border-left 1px solid c-6
+	position relative
+	box-sizing border-box
+	background-color c-5
+	&:after
+		content "\e608"
+		font-family icomoon
+		position absolute
+		right 10px
+		top 0
+		bottom 0
+		font-size 27px
+		display flex
+		color c-4
+		align-items center
+		pointer-events: none
+	select
+		font-size 16px
+		color c-4
+		height 60px
+		width 100%
+		padding 0 25px
+		box-sizing border-box
+		border-radius 12px
+		border 1px solid c-5
+		appearance none
+		&::-ms-expand
+			display none
+	&:first-child
+		border-left none
+	@media screen and (max-width 1000px)
+		select
+			font-size 14px
+			padding 0 18px
+		&:last-child
+			margin-right 0	
+	@media screen and (max-width 745px)
+		border-left none
+		margin-bottom 10px
+		background-color #f8f6f3
+		margin-right 0
+		border-bottom 1px solid c-4
+		select
+			background-color transparent
+	@media screen and (max-width 480px)	
+		width 100%
+		margin-right 0	
+		&:last-child
+			margin-bottom 0
+.b3-listado
+	margin-top 48px
+	display flex
+	flex-flow row wrap
+
+.b3-listado-default	
+	padding-bottom 30px
+	
+.b3-item
+	margin 0
+	width 45.4%
+	position relative
+	box-sizing border-box
+	margin-left 9%
+	margin-bottom 60px
+	border-bottom 1px solid c-12
+	&:nth-child(2n+1)
+		margin-left 0
+	&:first-child
+		margin-left 0
+	&:hover
+		.b3-btn
+			opacity 1
+			visibility visible
+			transform translateY(0px)
+		.b3-bg-hover
+			opacity 1
+			visibility visible
+		.b3-bg
+			opacity 0
+			visibility hidden
+	@media screen and (max-width 1000px)
+		width 48%
+		margin-left 4%
+	@media screen and (max-width 745px)
+		width 100%
+		margin-left 0
+		margin-bottom 30px
+		
+.b3-figura-it
+	overflow hidden
+	position relative
+	
+.b3-bg
+	background-size cover
+	background-position center
+	width 100%
+	height 468px
+	box-sizing border-box
+	transition: all 1s linear
+	@media screen and (max-width 745px)
+		height 390px
+		
+.b3-bg-hover
+	background-size cover
+	background-position center
+	width 100%
+	height 468px
+	box-sizing border-box
+	transition all 1s linear
+	opacity 0
+	position absolute
+	left 0
+	top 0
+	visibility hidden
+	@media screen and (max-width 745px)
+		height 390px
+
+.b3-btn
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	align-items center
+	min-width 156px
+	height 49px
+	background c-12
+	opacity 0
+	visibility hidden
+	transform translateY(50px)
+	transition all 1s ease
+	position absolute
+	bottom 43px
+	right 32%
+	z-index 2
+	padding 16px 28px
+	box-sizing border-box
+
+.b3-btn_icon
+	display block
+	line-height 1
+	color c-3
+	font-size 10px
+	margin 0 13px 0 0
+
+.b3-btn_text
+	display block
+	line-height 17px
+	color c-1
+	font-size 14px
+	text-transform uppercase
+	margin 0		
+
+.b3-tag
+	background-color c-5
+	width 148px
+	padding 10px 10px
+	box-sizing border-box
+	text-align center
+	font-size 14px
+	color c-4
+	letter-spacing: 0.0025em
+	top 24px
+	left 24px
+	position absolute
+	z-index 4
+.b3-info-it
+	display flex
+	
+.b3-logo-it
+	width 38.5%
+	padding-top 16px
+	padding-bottom 16px
+	padding-right 12px
+	box-sizing border-box
+	border-right 1px solid c-12
+	img
+		max-width 100%
+		height auto
+.b3-text-it
+	padding-top 10px
+	width 62%
+	padding-left 25px
+	box-sizing border-box
+	padding-bottom 10px
+	@media screen and (max-width 1000px)
+		padding-left 18px
+.b3-nombre
+	margin 0
+	font-weight 300
+	font-size 12px
+	color c-10
+	letter-spacing: 0.015em
+	text-transform uppercase
+.b3-gps
+	img
+		max-width 100%
+		height auto
+		margin 0
+		width 20px
+.b3-direccion
+	display flex
+	margin-top 7px
+	p
+		font-weight 300
+		font-size 16px
+		margin 0
+		margin-left 6px
+		letter-spacing: 0.005em
+	@media screen and (max-width 1000px)
+		p
+			font-size 14px
+		
+		
+.b3-wrap-clearfilters
+	padding 10px 0 40px 0
+	
+.b3-clear-filter
+	font-size 12px
+	&:hover
+		color c-1
+		span
+			text-decoration underline
+	i
+		vertical-align middle
+		margin-left 5px
+	
+	
+.b3-botom
+	margin-top 52px
+	
+

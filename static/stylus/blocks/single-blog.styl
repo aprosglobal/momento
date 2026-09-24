@@ -1,0 +1,222 @@
+//single. php
+
+//bloque 36
+
+.sng-banner
+	background-size cover
+	background-position center
+	position relative
+
+	.wancho
+		height 339px
+		display flex
+		justify-content center
+		z-index 3
+		position relative
+		flex-direction column
+	&:after
+		content ""
+		left 0
+		top 0
+		width 100%
+		height 100%
+		position absolute
+		background: linear-gradient(360deg, rgba(16, 28, 20, 0.56) 0%, rgba(53, 63, 56, 0) 78.73%)
+		z-index 1
+.sng-banner-title
+	font-size 30px
+	color c-6
+	line-height 35px
+	font-weight 700
+	max-width 480px
+	span
+		margin 0
+		display block
+		
+	@media screen and (max-width 1200px)
+		font-size 40px
+		max-width 350px
+	@media screen and (max-width 768px)
+		font-size 30px
+		max-width 430px
+		line-height 35px
+.single-post
+	.sng-banner-title
+		max-width 800px
+		font-size 40px
+		line-height 48px
+		
+		@media screen and (max-width 1200px)
+			font-size 40px
+			max-width 650px
+		@media screen and (max-width 768px)
+			font-size 30px
+			max-width 430px
+			line-height 35px
+			
+		@media screen and (max-width 480px)			
+			font-size 22px
+
+.sng-banner-current-category			
+	font-size 14px
+	color c-6
+	font-weight 700
+	margin-bottom 20px
+	text-transform uppercase
+	
+// bloque 37	
+	
+.sng-cnt
+	padding-top 50px
+	padding-bottom 60px
+	.wancho	
+		display flex
+		flex-flow row wrap
+		justify-content center
+.sng-cnt-left
+	width 59.5%
+	@media screen and (max-width 1000px)
+		width 100%
+		margin-bottom 40px
+.sng-cnt-description
+	font-size 14px
+	font-weight 400
+	line-height 19.6px
+	margin-bottom 65px
+	p
+		margin 0
+		margin-bottom 25px
+	img
+		max-width 100%
+		height auto
+		margin 20px 0
+	h1,h2,h3,h4,h5,h6
+		font-weight 700
+		margin-bottom 26px
+		
+	h1
+		font-size 32px
+		line-height 36px
+	h2
+		font-size 28px
+		line-height 32px
+	h3
+		font-size 24px
+		line-height 28px
+		font-weight 400
+		color #0E0E0F
+		
+	h4
+		font-size 20px
+		line-height 24px
+		font-weight 600
+		margin-bottom 10px
+	h5
+		font-size 18px
+		line-height 22px
+	h6
+		font-size 16px
+		line-height 20px
+		
+.sng-cnt-title-post
+	font-size 20px
+	font-weight 500
+	margin-bottom 26px		
+.sng-cnt-right
+	width 29%
+	@media screen and (max-width 1000px)
+		width 100%
+		max-width 400px
+
+.sng-cnt-text-red
+	font-weight 300
+	font-size 16px
+	letter-spacing 0.005em
+	color #222223
+	line-height 26px
+	margin-right 20px
+
+.sng-cnt-redes
+	display flex
+	align-items center
+.sng-cnt-item-red
+	margin 0
+	width 36px
+	height 36px
+	border-radius 100%
+	border 1px solid c-1
+	color c-1
+	display flex
+	align-items center
+	justify-content center
+	font-size 16px
+	margin-right 15px
+
+.sng-cnt-banner-bottom
+	margin-top 30px
+	img
+		max-width 100%
+		height auto
+		
+
+// Bloque 38
+
+.sng
+	padding-bottom 80px
+	.owl-carousel .owl-stage-outer
+		padding 5px
+		padding-bottom 30px	
+	.owl-nav
+		display flex
+		justify-content center
+		align-items center
+	.owl-next, .owl-prev
+		width 50px
+		height 50px
+		display flex
+		margin 0
+		align-items center
+		justify-content center
+		border-radius 100%
+		border 1px solid c-4
+		color c-4
+		font-size 24px
+		cursor pointer
+		&:hover
+			transition all .3s
+			border #334049
+			color #334049
+	.owl-next
+		margin-left 11px
+.sng-title
+	font-size 23px
+	line-height 28px
+	font-family t-0
+	font-weight 600
+	margin-bottom 50px
+	text-align center
+
+.sng-slider	
+	.owl-item
+		.arch-list-item-left
+			margin 0
+			width 100%
+	&.desktop			
+		display flex
+		flex-flow row wrap
+		.arch-list-item-left
+			width 32%
+			margin-left 2%
+			// &:nth-child(2n+1)
+			// 	margin-left 2%
+			&:first-child
+				margin-left 0
+	@media screen and (max-width 1000px)
+		&.desktop	
+			.arch-list-item-left
+				width 30.5%
+				margin-left 2%
+			
+
+
+	
