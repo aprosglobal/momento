@@ -330,6 +330,7 @@
     $description_form_project = get_field('description_form_project', 'options');
     $response_mailing_project = get_field('response_mailing_project', 'options');
     $hide_quote_proyect = get_field('hide_quote_proyect');
+    $form_title = get_field('formulario_titulo');
 
     $class_center = $tipology_list ? $tipology_list : 'form-center';
     ?>
@@ -342,7 +343,7 @@
                 <?php if ($tipology_list): ?>
 
                     <div class="b22-left g3-move-left-1">
-                        <h3 class="b22-title"><?php echo $title_quote_project ?></h3>
+                        <h3 class="b22-title"><?php echo $form_title ? $form_title : $title_quote_project ?></h3>
                         <?php if ($tipology_list): ?>
                             <div class="b22-inner-left">
                                 <div class="b22-content-slider">
@@ -682,7 +683,7 @@
         });
         //efecto levantar label de formulario
         var inputs = document.getElementsByClassName("form-input");
-        for (var i = 0;i < inputs.length;i++) {
+        for (var i = 0; i < inputs.length; i++) {
             inputs[i].addEventListener("blur", function (e) {
                 e.currentTarget.closest('.g5-item-input').classList.remove('inFocus');
             });
