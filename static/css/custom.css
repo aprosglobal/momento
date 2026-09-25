@@ -1,0 +1,16 @@
+/* CSS personalizado del tema. Se carga al final y pisa blocks_styl.css */
+.center-text-ventas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center-text-home {
+  padding-top: 23px;
+}
+
+@media screen and (max-width: 1000px) {
+  .center-text-home {
+    padding-top: 10px;
+  }
+}

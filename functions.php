@@ -34,11 +34,13 @@
 		// registrando estilo principal
 		wp_register_style('styles', get_template_directory_uri() . '/static/css/styles.css', array(), '1.0.2' );
 		wp_register_style('block_styles', get_template_directory_uri() . '/static/css/blocks_styl.css', array(), '1.0.6' );
+		wp_register_style('custom_styles', get_template_directory_uri() . '/static/css/custom.css', array('block_styles'), '1.0.0' );
 		//llamando estilo registrado
 		wp_enqueue_style('ow-slider');
 		wp_enqueue_style('validate');
 		wp_enqueue_style('styles');
 		wp_enqueue_style('block_styles');
+		wp_enqueue_style('custom_styles');
 		//registrar librerias js
 		//jquery 1.8.3
 		// wp_register_script('jquery3-2-1', get_template_directory_uri() . '/static/js/jquery-3.2.1.min.js', array(), '3.2.1');
