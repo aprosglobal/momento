@@ -305,7 +305,7 @@
                                 </div>
                                 <div class="b3-info-it h-fit">
                                     <?php if ($logotipo_list_projects): ?>
-                                        <div class="b3-logo-it center-logo-card">
+                                        <div class="b3-logo-it center-logo-card mh-115">
                                             <img src="<?php echo $logotipo_list_projects ?>" alt="" height="68" width="148">
                                         </div>
                                     <?php endif ?>

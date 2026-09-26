@@ -17,6 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mh-115 {
   min-height: 115px;
 }
 
@@ -24,7 +27,7 @@
   .center-text-card-home {
     padding-top: 10px;
   }
-  .center-logo-card {
+  .mh-115 {
     min-height: auto;
   }
 }
