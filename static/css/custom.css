@@ -1,16 +1,27 @@
 /* CSS personalizado del tema. Se carga al final y pisa blocks_styl.css */
-.center-text-ventas {
+.center-text-card-ventas {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.center-text-home {
-  padding-top: 23px;
+.center-text-card-home {
+  /* padding-top: 23px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h-fit {
+  height: fit-content !important;
+}
+.center-logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1000px) {
-  .center-text-home {
+  .center-text-card-home {
     padding-top: 10px;
   }
 }

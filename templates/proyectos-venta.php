@@ -225,11 +225,11 @@
 
 								<div class="b3-info-it">
 									<?php if ($logotipo_list_projects): ?>
-										<div class="b3-logo-it">
+										<div class="b3-logo-it center-logo-card">
 											<img src="<?php echo $logotipo_list_projects ?>" alt="" height="68" width="148">
 										</div>
 									<?php endif ?>
-									<div class="b3-text-it center-text-ventas">
+									<div class="b3-text-it center-text-card-ventas">
 										<span class="b3-nombre"><?php echo $name_type ?></span>
 										<div class="b3-direccion">
 											<div class="b3-gps">
