@@ -17,10 +17,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 103px;
 }
 
 @media screen and (max-width: 1000px) {
   .center-text-card-home {
     padding-top: 10px;
+  }
+  .center-logo-card {
+    min-height: auto;
   }
 }
