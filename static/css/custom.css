@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 103px;
+  min-height: 115px;
 }
 
 @media screen and (max-width: 1000px) {
