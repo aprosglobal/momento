@@ -6029,7 +6029,7 @@
   height: auto;
 }
 .b3-text-it {
-  padding-top: 23px;
+  padding-top: 10px;
   width: 62%;
   padding-left: 25px;
   -webkit-box-sizing: border-box;
@@ -6039,7 +6039,6 @@
 }
 @media screen and (max-width: 1000px) {
   .b3-text-it {
-    padding-top: 10px;
     padding-left: 18px;
   }
 }
